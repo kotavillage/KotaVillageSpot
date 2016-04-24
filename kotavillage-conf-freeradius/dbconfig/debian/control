@@ -1,0 +1,13 @@
+Source: kotavillage-conf-freeradius
+Section: unknown
+Priority: extra
+Maintainer: AimeyZie <kvh@kotavillage.tk>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: kotavillage-conf-freeradius
+Architecture: all
+Depends: ${misc:Depends}, libconfig-simple-perl, libxml-simple-perl
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

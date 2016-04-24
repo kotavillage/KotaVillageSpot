@@ -1,0 +1,3 @@
+templates/* /usr/share/kotavillage/templates/
+dbconfig/* /usr/share/dbconfig-common/data/kotavillage-conf-freeradius/
+freeradius/* /etc/freeradius/

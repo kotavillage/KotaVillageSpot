@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+DEB_AUTO_UPDATE_DEBIAN_CONTROL = 1
+
+DEB_DIVERT_EXTENSION = .kotavillage
+# Replace some base files with simple replacements.
+DEB_DIVERT_FILES_kotavillage-conf-freeradius += \
+	/etc/freeradius/sql.conf.kotavillage \
+	/etc/freeradius/sites-available/default.kotavillage \
+	/etc/freeradius/dictionary.kotavillage \
+	/etc/freeradius/sql/mysql/counter.conf.kotavillage \
+#	/etc/freeradius/modules/perl.kotavillage
+#	/etc/mailname.debathena \
+#	/etc/papersize.debathena
+#DEB_TRANSFORM_FILES_kotavillage-conf-freeradius += \
+#	/etc/freeradius/clients.conf.kotavillage
+#	/etc/default/monit.kotavillage \
+#	/etc/monit/monitrc.kotavillage
+
+# These files are installed via dh_install from the files/ directory
+# (see debian/kotavillage-conf-freeradius.install)
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/config-package.mk
+
