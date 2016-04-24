@@ -1,0 +1,19 @@
+Source: kotavillage-conf-dnsmasq
+Section: config
+Priority: extra
+Maintainer: AimeyZie <kvh@kotavillage.tk>
+Build-Depends-Indep: @cdbs@
+Standards-Version: 3.9.1
+Homepage: http://kotavillage.tk/
+
+Package: kotavillage-conf-dnsmasq
+Architecture: all
+Depends: ${misc:Depends}, dnsmasq (>= 2.51), php5-cli
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Config files for Dnsmasq for the KOTAVILLAGE Hotspot System
+ The KOTAVILLGE Hotspot System binds together CoovaChilli, Freeradius, MySQL, and 
+ other systems as well as providing an administrative frontend to managing 
+ users and other hotspot related tasks.
+ .
+ This package provides Configuration files for the DNS subsystem

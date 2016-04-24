@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+#set -u
+
+action="$1"
+
+if [ "$action" != configure ]
+  then
+  exit 0
+fi
+
+#DEBHELPER#
+
+sh /usr/share/kotavillage/scripts/update_kotavillage_networksettings.sh || true

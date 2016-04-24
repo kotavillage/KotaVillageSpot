@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+DEB_AUTO_UPDATE_DEBIAN_CONTROL = true
+
+DEB_DIVERT_EXTENSION = .kotavillage
+# Replace some base files with simple replacements.
+#DEB_DIVERT_FILES_kotavillage-conf-squid3 += \
+#    /etc/logrotate.d/squid3.kotavillage
+#    /etc/squid3/squid.conf.kotavillage
+#	/etc/monit/monitrc.kotavillage
+#	/etc/issue.net.debathena \
+#	/etc/mailname.debathena \
+#	/etc/papersize.debathena
+#DEB_TRANSFORM_FILES_kotavillage-conf-monit += \
+#	/etc/default/monit.kotavillage \
+
+
+# These files are installed via dh_install from the files/ directory
+# (see debian/grase-conf-monit.install)
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/config-package.mk
+
