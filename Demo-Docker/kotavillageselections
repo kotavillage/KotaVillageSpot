@@ -1,0 +1,29 @@
+# Password of the database's administrative user:
+kotavillage-www-portal kotavillage-www-portal/mysql/admin-pass password kvhsql
+# MySQL application password for grase-conf-freeradius:
+#kotavillage-conf-freeradius kotavillage-conf-freeradius/mysql/app-pass password 
+# MySQL application password for kotavillage-www-portal:
+#kotavillage-www-portal kotavillage-www-portal/mysql/app-pass password 
+# Password of the database's administrative user:
+kotavillage-conf-freeradius kotavillage-conf-freeradius/mysql/admin-pass password kvhsql
+#  username for kotavillage-conf-freeradius:
+kotavillage-conf-freeradius kotavillage-conf-freeradius/db/app-user string radius
+# Configure database for kotavillage-www-portal with dbconfig-common?
+kotavillage-www-portal kotavillage-www-portal/dbconfig-install boolean true
+# Configure database for kotavillage-conf-freeradius with dbconfig-common?
+kotavillage-conf-freeradius kotavillage-conf-freeradius/dbconfig-install boolean true
+#  database name for kotavillage-www-portal:
+kotavillage-www-portal kotavillage-www-portal/db/dbname string radmin
+#  username for kotavillage-www-portal:
+kotavillage-www-portal kotavillage-www-portal/db/app-user string radmin
+#  database name for kotavillage-conf-freeradius:
+kotavillage-conf-freeradius kotavillage-conf-freeradius/db/dbname string radius
+# New password for the MySQL "root" user:
+mysql-server-5.5 mysql-server/root_password password kvhsql
+# Repeat password for the MySQL "root" user:
+mysql-server-5.5 mysql-server/root_password_again password kvhsql
+# Choices: unix socket, tcp/ip
+# Name of the database's administrative user:
+kotavillage-www-portal kotavillage-www-portal/mysql/admin-user string root
+# Name of the database's administrative user:
+kotavillage-conf-freeradius kotavillage-conf-freeradius/mysql/admin-user string root

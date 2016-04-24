@@ -1,0 +1,10 @@
+#!/bin/bash 
+# Get container ID
+CID=$(docker ps | grep demo:latest |awk '{print $1}'  )
+if [ "x" != "x$CID" ]; then
+    # Stop and delete container
+    docker kill $CID >/dev/null 2>&1
+    docker rm $CID >/dev/null 2>&1
+fi
+# Start new container
+docker run -d -t -p 80:80 kotavillagehotspot/demo:latest
