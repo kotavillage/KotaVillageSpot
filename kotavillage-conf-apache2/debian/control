@@ -1,0 +1,22 @@
+Source: kotavillage-conf-apache2
+Section: config
+Priority: extra
+Maintainer: AimeyZie <kvh@kotavillage.tk>
+Build-Depends-Indep: cdbs (>= 0.4.85~),
+ debhelper (>= 7.0.1),
+ dh-buildinfo,
+ config-package-dev (>= 4.5~)
+Standards-Version: 3.9.1
+Homepage: http://kotavillagehotspot.tk/
+
+Package: kotavillage-conf-apache2
+Architecture: all
+Depends: ${misc:Depends}, libapache2-mod-php5
+Provides: ${diverted-files}
+Conflicts: ${diverted-files}
+Description: Config files for Apache2 for the KOTAVILLAGE Hotspot System
+ The KOTAVILLAGE Hotspot System binds together CoovaChilli, Freeradius, MySQL, and 
+ other systems as well as providing an administrative frontend to managing 
+ users and other hotspot related tasks.
+ .
+ This package provides Configuration files for the Webserver subsystem

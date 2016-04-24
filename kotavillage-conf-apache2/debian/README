@@ -1,0 +1,7 @@
+The Debian Package kotavillage-conf-apache2
+----------------------------
+
+This package contains the config files for Apache2 to enable to KotaVillage Hotspot
+interface to be accessible.
+
+ -- AimeyZie <kvh@kotavillage.tk>  Tue, 08 Nov 2016 11:48:00 +1000

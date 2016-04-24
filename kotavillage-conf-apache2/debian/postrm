@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+#DEBHELPER#
+
+[ -L /etc/apache2/conf.d/kotavillage-conf-apache2.conf ] && rm /etc/apache2/conf.d/kotavillage-conf-apache2.conf || true
